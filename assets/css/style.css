@@ -1,0 +1,957 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&family=Montserrat:wght@400&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pinyon+Script&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /*permet d'avoir des transitions assez fluides lorsqu'on passe d'une section à l'autre*/
+}
+
+p {
+    font-weight: 300;
+    color: #1111;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 1s;
+
+}
+
+#header-logo {
+    width: 10%;
+}
+
+nav {
+    width: 60%;
+}
+
+header img {
+    width: 100%;
+}
+
+.header_menu {
+    display: flex;
+    position: relative;
+}
+
+.header_menu li {
+    font-family: 'Epilogue', sans-serif;
+    list-style: none;
+}
+
+.header_menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 60px;
+    font-weight: 700;
+}
+
+
+.btn_reservation {
+    padding: 10px 20px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    background: #FFD700;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+
+.btn_reservation:hover {
+    transition: ease-in;
+    padding: 10px 20px;
+    color: #ffffff;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+.btn_reservation2 {
+    padding: 10px 20px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+
+.btn_reservation2:hover {
+    transition: ease-in;
+    padding: 10px 20px;
+    color: #ffffff;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+header .header_menu li a:hover {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+}
+
+.burger-menu {
+    display: none;
+    /* Masquer le menu burger par défaut */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.baniere {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background-image: url(../img/cover_dark.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.baniere .contenu {
+    max-width: 70%;
+    text-align: center;
+
+}
+
+.baniere .contenu h1 {
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contenu p {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Epilogue', sans-serif;
+    margin-bottom: 20px;
+}
+
+.btn1 {
+    font-size: 1em;
+    color: #fff;
+    background: #FFD700;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.btn2 {
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.btn1:hover {
+    letter-spacing: 4px;
+}
+
+.btn2:hover {
+    letter-spacing: 4px;
+}
+
+.nous {
+    padding-top: 70px;
+    padding-right: 50px;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .premier {
+    margin: 20px;
+    width: 100%;
+}
+
+.row .premier h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.row .premier p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.row .premier img {
+    margin-left: 50px;
+    width: 100%;
+
+}
+
+
+.title {
+    font-size: 2em;
+    font-weight: 300px;
+    font-family: 'Pinyon Script', 'cursive';
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.debut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.debut h2 {
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.debut p {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.gallery-item {
+    width: calc(40% - 10px);
+    height: 90%;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    /* Transition de l'opacité en 0.3 secondes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none;
+    /* Permet de cliquer sur l'image sous le texte */
+}
+
+.overlay h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: small;
+    margin: 20px;
+
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.buttons {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#avis {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#voir-moins {
+    display: none;
+}
+
+#reservation {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background-image: url(../img/food_6_dark.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#reservation .title {
+    color: #ffffff;
+    font-family: 'Pinyon Script', cursive;
+    font-size: 65px;
+    animation: tada;
+    animation-duration: 1s;
+    margin-bottom: 20px;
+}
+
+#reservation p {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ffffff;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    appearance: none;
+    color: #ffffff;
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+label {
+    height: 100%;
+    position: relative;
+    left: 0;
+    bottom: 15px;
+    padding: 10px;
+    color: #ffffff;
+    cursor: text;
+    width: 290px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 0;
+    color: #ffffff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #ffffff;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    padding: 10px 0;
+    color: #000000;
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+#time {
+    width: 100%;
+}
+
+#date {
+    width: 100%;
+}
+
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row2 .input-group {
+    width: 100%;
+    flex-basis: 46%;
+}
+
+i {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#person {
+    width: 100%;
+}
+
+#monBouton {
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact {
+    width: 80%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact p {
+    color: #fff;
+    margin: 20px;
+}
+
+#venue1 {
+    margin-top: 25px;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+#signature {
+    height: 70px;
+    margin-left: 10px;
+    animation: backInLeft;
+    animation-duration: 2s;
+}
+
+
+#social {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+#venue2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 40%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footerNav ul li {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Epilogue', sans-serif;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.contact2 .liste1 {
+    position: relative;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: left;
+    margin-right: 10px;
+    display: flex;
+}
+
+.contact2 .liste1 .icon {
+    color: rgb(19, 154, 212);
+}
+
+
+.temoignage {
+    width: calc(70% - 10px);
+    height: 90%;
+    margin: 5px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.temoignage img {
+    width: 90%;
+    height: 100%;
+}
+
+.info1,
+.info2,
+.info3 {
+    color: #000;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.temoignage-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.temoignage-wrapper {
+    display: flex;
+    margin-left: 50px;
+
+}
+
+.temoignage p span {
+    font-size: 0.6em;
+}
+
+.text1 {
+    display: flex;
+    font-size: 1em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text2 {
+    display: flex;
+    font-size: 1em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.text3 {
+    display: flex;
+    font-size: 1em;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.titre {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 50px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #000;
+    padding-left: 3%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.burger-menu {
+    display: none;
+    /* Masquer le menu burger par défaut */
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+#messageErreur {
+    display: none;
+    /* Par défaut, le message d'erreur est caché */
+    color: red;
+    /* Couleur du texte en rouge */
+    font-weight: bold;
+    /* Texte en gras */
+}
+
+.verifie{
+    display: flex;
+    flex-direction: column;
+}
+
+.verifie p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        width: fit-content;
+    }
+
+    .header_menu {
+        display: none;
+        /* Masquer la barre de navigation à l'intérieur de la media query */
+        flex-direction: column;
+        justify-content: center;
+        /* Afficher les éléments en colonne */
+        align-items: flex-start;
+        /* Aligner les éléments à gauche */
+        width: 95.5%;
+        /* Prendre toute la largeur disponible */
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 7.8px;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    .btn_reservation {
+        margin-top: 40px;
+        margin-bottom: 10px;
+
+    }
+
+    .header_menu .btn_reservation {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .header_menu li {
+        margin-top: 20px;
+    }
+
+    .header_menu.show {
+        display: flex;
+        /* Afficher les éléments lorsque la classe "show" est appliquée */
+    }
+
+    .burger-menu {
+        display: flex;
+        /* Afficher le menu burger à la place */
+    }
+
+    .premier p {
+        font-size: 0.8em;
+    }
+
+    .baniere .contenu h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .contenu p {
+        font-size: 0.8em;
+    }
+
+    .debut p {
+        font-size: 0.8em;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        font-size: 0.8em;
+    }
+
+    .nous {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .title {
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    .titre {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .row .premier img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .buttons {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .temoignage-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .temoignage {
+        margin-bottom: 60px;
+    }
+
+    .row2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    .row3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row3 .contact2 {
+        margin-top: 50px;
+    }
+
+
+    .overlay h3 {
+        font-size: 0.5em;
+    }
+
+    .overlay p {
+        font-size: 7px;
+        margin: 5px;
+
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    #reservation .title {
+        color: #fff;
+        margin-bottom: 40x;
+        font-size: 2em;
+    }
+
+    .row2 .input-group {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .temoignage {
+        width: 100%;
+    }
+
+    .temoignage-wrapper {
+        margin: 0%;
+    }
+
+    .temoignage-wrapper img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row .premier p {
+        margin: 20px;
+    }
+
+    .contenu .btn_reservation {
+        margin-bottom: 30px;
+    }
+
+    .debut p {
+        width: 100%;
+        margin: 20px;
+    }
+}
